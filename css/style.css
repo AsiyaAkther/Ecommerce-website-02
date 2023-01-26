@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;700&family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    font-family: 'Lobster', cursive;
+}
+.logo a{
+    font-size: 50px;
+    color: #2f2e41;
+    text-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.search_area{
+    position: fixed;
+    right: 90px;
+    top: 50px;
+    width: 170px;
+    height: 45px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    box-sizing: border-box;
+    z-index: 1;
+    border: 2px 2px 30px rgba(167, 158, 245, 0.1);
+}
+.search_box input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #1f1f1f;
+    font-size: 14px;
+    padding: 1px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.search_box input::placeholder{
+    color: #1d1d1d;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.first_section_img{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%, -50%);
+}
+.first_section_img img{
+    height: 300px;
+}
+
+.first_section_text{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+}
+.first_section_text h1, .first_section_text h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    line-height: 60px;
+    font-size: 64px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    letter-spacing: 3px;
+    color: #3d3d4a;
+    text-transform: uppercase;
+}
+.first_section_text h1{
+    letter-spacing: 28px;
+}
+span{
+    color: #7a72ff;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    background-color: #2f2e41;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    margin-top: 20px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    border: transparent !important;
+    transition: ease-in-out 0.5s;
+}
+.btn:hover{
+    color: #ffffff;
+    background: #6e64ff;
+    transition: ease-in-out 0.5s;
+}
+.icons{
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    padding: 5px 0px;
+    z-index: 1;
+}
+.icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 15px;
+}
+.icons a i{
+    color: rgba(39,39,39,0.80);
+}
+.icons a:hover .fa-facebook-f{
+    color: #3b5998;
+}
+.icons a:hover .fa-instagram{
+    color: #3f729b;
+}
+.icons a:hover .fa-twitter{
+    color: #00acee;
+}
+.icons a:hover .fa-youtube{
+    color: #ff0000;
+}
+.product_section{
+    width: 85%;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: -60px;
+    position: relative;
+    background-size: 1000px;
+    border-radius: 10px;
+}
+.product_section > h3{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 32px;
+    color: #323543;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+}
+.product_box{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+.product_box img{
+    height: 180px;
+}
+.product_box p{
+    color: #4d4d4d70;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
